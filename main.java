@@ -1,3 +1,6 @@
+// WELCOME to the SUPER COOL minecraft /spawn plugin
+// ICEAYY WTF why are YOU making a minecraft plugin that already exists??
+// my response:
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -17,20 +20,20 @@ public class SpawnCommand extends JavaPlugin implements Listener {
     private int y = 0;
     private int z = 0;
 
-    // plugin enable event (might need this idk)
+    // plugin enable event (might need this idk) still questioning this
     @Override
     public void onEnable() {
         getLogger().info("spawn command enable");
         Bukkit.getServer().getPluginManager().registerEvents(this, this);
     }
 
-    // plugin disable event (when will this ever be needed)
+    // plugin disable event (when will this ever be needed)   note to self it was needed thanks past tense iceayy
     @Override
     public void onDisable() {
         getLogger().info("spawn command disabled");
     }
 
-    // listener for commands
+    // listener for commands. thanks u/mylittleponycoderfan420 for this!!
     @EventHandler
     public void onPlayerCommand(PlayerCommandPreprocessEvent event) {
         // player who issued cmd
@@ -41,16 +44,17 @@ public class SpawnCommand extends JavaPlugin implements Listener {
         // check if cmd is /spawn
         if (command.startsWith("/spawn")) {
             // prevent normal execution
-            event.setCancelled(true);
+            event.setCancelled(true); // checkmate
 
-            // get the wold
+            // get the world. originally this said "get the wold" but i changed it because i can(icann.org)
             World world = player.getWorld();
             // location object
             Location spawn = new Location(world, x, y, z);
 
-            // check if valid
+            // check if valid. NOT A REFERENCE TO THAT TWITTER ACCOUNT111!!!
             if (spawn == null) {
-                // worlds best error handling
+                // worlds best error handling. 
+                // him: how much Stack Overflow® do you need??? me:
                 player.sendMessage("Error: Failed to teleport to requested location (" + x + ", " + y + ", " + z + ")");
                 return;
             }
