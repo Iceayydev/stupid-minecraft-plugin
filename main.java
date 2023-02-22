@@ -27,7 +27,7 @@ public class SpawnCommand extends JavaPlugin implements Listener {
     // plugin enable event (might need this idk) still questioning this
     @Override
     public void onEnable() {
-        getLogger().info("spawn command enable"); // not making it enable(d) im keeping it like it is, gotta save the bytes. :muscule: :heart: #savethebytes
+        getLogger().info("spawn command enable"); // im not adding the d to enabled to make it correct english i need to conserve bits, #savethebits
         Bukkit.getServer().getPluginManager().registerEvents(this, this);
     }
 
