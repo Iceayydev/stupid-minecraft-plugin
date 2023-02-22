@@ -1,4 +1,8 @@
 // WELCOME to the SUPER COOL minecraft /spawn plugin
+// wait you expected a jar file??? ill make you jar file, NOT it takes like a whole 5 min.
+// as of febuary 22nd at 10:52AM this plugin WORKS for some reason.
+// questions? concerns as to how i wrote working java code? dial 1-800-4-ICEAYY thats 1-800-4-ICEAYY
+
 // ICEAYY WTF why are YOU making a minecraft plugin that already exists??
 // my response:
 import org.bukkit.Bukkit;
@@ -23,7 +27,7 @@ public class SpawnCommand extends JavaPlugin implements Listener {
     // plugin enable event (might need this idk) still questioning this
     @Override
     public void onEnable() {
-        getLogger().info("spawn command enable");
+        getLogger().info("spawn command enable"); // not making it enable(d) im keeping it like it is, gotta save the bytes. :muscule: :heart: #savethebytes
         Bukkit.getServer().getPluginManager().registerEvents(this, this);
     }
 
