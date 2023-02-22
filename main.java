@@ -27,7 +27,7 @@ public class SpawnCommand extends JavaPlugin implements Listener { // his ass is
     // plugin enable event (might need this idk) still questioning this
     @Override
     public void onEnable() { // the void
-        getLogger().info("spawn command enable"); // im not adding the d to enabled to make it correct english i need to conserve bits, #savethebits
+        getLogger().p[l[linfo("spawn command enable"); // im not adding the d to enabled to make it correct english i need to conserve bits, #savethebits
         Bukkit.getServer().getPluginManager().registerEvents(this, this); // this this
     }
 
